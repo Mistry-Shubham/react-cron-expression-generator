@@ -1,38 +1,56 @@
 {
-	"name": "react-cron-expression-generator",
-	"version": "1.0.0",
-	"description": "Simple react cron expression generator",
-	"main": "dist/cjs/index.js",
-	"module": "dist/esm/index.js",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "npm run clean && rollup -c",
-		"clean": "rimraf dist || rm -rf dist",
-		"tsc": "tsc"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Mistry-Shubham/react-cron-expression-generator.git"
-	},
-	"author": "Mistry-Shubham",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/Mistry-Shubham/react-cron-expression-generator/issues"
-	},
-	"homepage": "https://github.com/Mistry-Shubham/react-cron-expression-generator#readme",
-	"devDependencies": {
-		"@rollup/plugin-terser": "^0.4.4",
-		"@rollup/plugin-typescript": "^11.1.6",
-		"@types/react": "^18.2.74",
-		"react": "^18.2.0",
-		"rimraf": "^5.0.5",
-		"rollup": "^4.14.1",
-		"rollup-plugin-dts": "^6.1.0",
-		"rollup-plugin-postcss": "^4.0.2",
-		"tslib": "^2.6.2",
-		"typescript": "^5.4.4"
-	},
-	"peerDependencies": {
-		"react": ">=17"
-	}
+  "name": "react-cron-expression-generator",
+  "version": "1.0.0",
+  "description": "Simple react cron expression generator",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && rollup -c",
+    "clean": "rimraf dist || rm -rf dist",
+    "pretty": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky && husky install",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mistry-Shubham/react-cron-expression-generator.git"
+  },
+  "author": "Mistry-Shubham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mistry-Shubham/react-cron-expression-generator/issues"
+  },
+  "homepage": "https://github.com/Mistry-Shubham/react-cron-expression-generator#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.2.74",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.14.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.4"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  }
 }
