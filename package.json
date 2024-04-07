@@ -1,0 +1,38 @@
+{
+	"name": "react-cron-expression-generator",
+	"version": "1.0.0",
+	"description": "Simple react cron expression generator",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "npm run clean && rollup -c",
+		"clean": "rimraf dist || rm -rf dist",
+		"tsc": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mistry-Shubham/react-cron-expression-generator.git"
+	},
+	"author": "Mistry-Shubham",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Mistry-Shubham/react-cron-expression-generator/issues"
+	},
+	"homepage": "https://github.com/Mistry-Shubham/react-cron-expression-generator#readme",
+	"devDependencies": {
+		"@rollup/plugin-terser": "^0.4.4",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"@types/react": "^18.2.74",
+		"react": "^18.2.0",
+		"rimraf": "^5.0.5",
+		"rollup": "^4.14.1",
+		"rollup-plugin-dts": "^6.1.0",
+		"rollup-plugin-postcss": "^4.0.2",
+		"tslib": "^2.6.2",
+		"typescript": "^5.4.4"
+	},
+	"peerDependencies": {
+		"react": ">=17"
+	}
+}
